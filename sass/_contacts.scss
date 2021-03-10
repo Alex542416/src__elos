@@ -1,0 +1,341 @@
+.section {
+	&--maincontacts {
+		background-color: #fff;
+		padding-bottom: 3.3rem;
+		padding-top: 1.4rem;
+		@media(max-width: 48em) {
+			// padding-bottom: 8rem;
+		}
+	}
+	&--contactsmap {
+		background-color: #fff;
+		padding-bottom: 3.3rem;
+		@media(max-width: 48em) {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+// Maincontacts
+
+.maincontacts {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__left {
+		width: 115rem;
+		background-color: #F9F9F9;
+		border-radius: 5rem;
+		padding-left: 8.2rem;
+		padding-top: 8.5rem;
+		padding-bottom: 5rem;
+		&--title {
+			font-size: 6rem;
+			font-weight: 700;
+			color: #2C2C2C;
+			margin-bottom: 3.1rem;
+		}
+		&--subtitle {
+			font-size: 1.8rem;
+			font-weight: 400;
+			color: #2C2C2C;
+			&:nth-of-type(2) {
+				margin-bottom: 0.5rem;
+			}
+		}
+		&--ourcontacts {
+			font-size: 3rem;
+			font-weight: 700;
+			color: #2C2C2C;
+			margin-top: 4rem;
+		}
+
+		&--bottominner {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 4.8rem;
+		}
+		&--item {
+			display: flex;
+			width: 45%;
+			align-items: center;
+			margin-right: 0rem;
+			margin-bottom: 6.3rem;
+			&:nth-of-type(even) {
+				margin-left: -12.5rem;
+			}
+			&--img {
+				width: 6.2rem;
+				height: 6.1rem;
+				border-radius: 100%;
+				margin-right: 1.9rem;
+				& img {
+					width: 100%;
+					object-fit: cover;
+					border-radius: 100%;
+				}
+			}
+			&--text {
+
+				&--title {
+					font-size: 2rem;
+					font-weight: 700;
+					color: #2C2C2C;
+				}
+				&--subtitle {
+					font-size: 2rem;
+					font-weight: 300;
+					color: #2C2C2C;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.seo__right__item--maincontacts {
+	width: 40.6rem;
+}
+
+
+
+
+
+
+// Map
+
+.map__inner {
+	width: 100%;
+	margin-top: 3.3rem;
+	border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.map {
+	width: 100%;
+	height: 44.3rem;
+}
+
+#map {
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ******************************************************************
+// ******************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile Adaptive
+
+@media(max-width: 48em) {
+
+// Maincontacts
+
+.maincontacts {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 4.4rem;
+	}
+	&__left {
+		width: auto;
+		background-color: #F9F9F9;
+		border-radius: 10rem;
+		padding-left: 4.4rem;
+		padding-top: 12.4rem;
+		padding-bottom: 6rem;
+		order: 1;
+		&--title {
+			font-size: 6rem;
+			margin-bottom: 4rem;
+			padding-right: 4rem;
+			line-height: 1.5;
+		}
+		&--subtitle {
+			font-size: 3rem;
+			&:nth-of-type(2) {
+				margin-bottom: 1rem;
+			}
+		}
+		&--ourcontacts {
+			display: none;
+		}
+
+		&--bottominner {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 9.6rem;
+		}
+		&--item {
+			display: flex;
+			flex-direction: column;
+			width: 40%;
+			align-items: start;
+			margin-right: 0rem;
+			margin-bottom: 8.6rem;
+			&:nth-of-type(even) {
+				margin-left: 0rem;
+			}
+			&:nth-of-type(1) {
+				order: 1;
+			}
+			&:nth-of-type(2) {
+				order: 3;
+			}
+			&:nth-of-type(3) {
+				order: 2;
+				margin-left: 6rem;
+			}
+			&:nth-of-type(4) {
+				order: 4;
+				margin-left: 6rem;
+			}
+			&--img {
+				width: 12.2rem;
+				height: 12.2rem;
+				border-radius: 100%;
+				margin-right: 0rem;
+				& img {
+					width: 100%;
+					object-fit: cover;
+					border-radius: 100%;
+				}
+			}
+			&--text {
+
+				&--title {
+					display: block;
+					font-size: 3rem;
+					margin-top: 4rem;
+				}
+				&--subtitle {
+					font-size: 3rem;
+					white-space: normal;
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.seo__right__item__btn--request--maincontacts {
+	width: 55%;
+}
+
+.persuade__right--title--contacts {
+	font-size: 4.5rem;
+	letter-spacing: 0.01em;
+}
+
+
+
+
+
+
+
+// Map
+
+.map__inner {
+	width: 100%;
+	margin-top: 3.6rem;
+	border-radius: 10rem;
+	order: 2;
+}
+
+.map {
+	width: 100%;
+	height: 91.6rem;
+}
+
+#map {
+	height: 100%;
+}
+
+
+
+
+
+
+.seo__right__item--maincontacts {
+	width: auto;
+	order: 3;
+	margin-top: 3.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} //Mobile Adaptive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
